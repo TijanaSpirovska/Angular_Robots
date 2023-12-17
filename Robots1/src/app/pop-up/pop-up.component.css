@@ -1,0 +1,11 @@
+.price-button {
+    padding: 0px;
+    width: 10px;
+    color: transparent;
+    block-size: 20%;
+    margin-block-start: 100;
+    margin-block-end:60%;
+    position: absolute;
+    top:40;
+   
+  }

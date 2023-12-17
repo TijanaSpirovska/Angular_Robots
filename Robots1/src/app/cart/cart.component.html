@@ -1,0 +1,25 @@
+<div class="container">
+    <ul class="products" *ngIf="products.length > 0" >
+     
+        <li class="product-item" *ngFor="let product of products">
+          <div class="product">
+            <div class="product-details">
+                <input type="number" [(ngModel)]="product.quantity"  class="quantity" />
+              <img [src]="product.imageUrl"   [alt]="product.description" />
+              <div class="product-info">
+                <div class="price">
+                <button class="remove-button" (click)="removeFromCart(product)">Remove</button> 
+              </div>
+                <div class="name">{{product.name}}</div>
+                <div class="description">{{product.description}}</div>
+                <div class="category">Part Type: {{product.category}}</div>
+              
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="products" *ngIf="products.length > 0" >
+              <div class="total-price">Total price is:{{totalPrice}}</div>
+</ul>
+    </div>

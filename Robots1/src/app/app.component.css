@@ -1,0 +1,49 @@
+li {
+    display: inline;
+    padding-inline-start: 15%;
+    white-space: 5%;
+    color: violet;
+    block-size: 10%;  
+
+}
+a {
+    padding: 8px;
+}
+.navbar{
+   block-size: 10%;
+   border-block-color: green;
+    color: violet;
+}
+.box-item {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: violet;
+    border-bottom: none;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent; /* Add transparent underline initially */
+    transition: border-color 0.3s ease; /* Add a transition for a smooth effect */
+  }
+  
+  .nav-link:hover {
+    border-color: #333; /* Change the underline color on hover */
+  }
+  
+  .box-item:hover {
+    background-color: #ddd;
+  }
+.container {
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin: -3px -8px 0 -8px;
+    padding: 0 8px 5px 8px;
+    border-bottom: 2px solid #818285;
+  }
+  

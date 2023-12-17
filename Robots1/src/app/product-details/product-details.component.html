@@ -1,0 +1,21 @@
+<div class="container">
+    <ul class="products" *ngIf="products">
+        <li class="product-item">
+          <div class="product">
+            <div class="product-details"> 
+              <img [src]="products.imageUrl" [alt]="products.description" (click)="productDescription(products.id)">
+              <div class="product-info">
+                <div class="name">{{products.name}}</div>
+                <div class="description">{{products.description}}</div>
+                <div class="category">Part Type: {{products.category}}</div>
+              </div>
+            </div>
+            <div class="price">
+              {{products.price |currency:'USD'}}
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="description-details">{{desc}}</div>
+    </div>
+  
